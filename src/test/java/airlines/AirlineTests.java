@@ -1,38 +1,32 @@
 package airlines;
 
-import io.restassured.RestAssured;
-import io.restassured.RestAssured.*;
-import io.restassured.http.ContentType;
 import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utils.RestUtils;
+import restutils.RestUtils;
+import utils.JsonUtils;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static io.restassured.RestAssured.*;
 import static io.restassured.RestAssured.given;
 
 public class AirlineTests {
 
     @Test
-    public void createAirline(){
+    public void createAirline() throws IOException {
 
-        String endpoint = "https://api.instantwebtools.net/v1/airlines";
-        String reqBody = "{\n" +
-                "    \"id\": 7651576,\n" +
-                "    \"name\": \"Vuvu Airways\",\n" +
-                "    \"country\": \"Dac Bietnam\",\n" +
-                "    \"logo\": \"https://upload.wikimedia.org/wikipedia/en/thumb/9/9b/Qatar_Airways_Logo.svg/sri_lanka.png\",\n" +
-                "    \"slogan\": \"Lemme get the xe lua!\",\n" +
-                "    \"head_quaters\": \"Orange County, CA, United States\",\n" +
-                "    \"website\": \"www.vuvuairways.com\",\n" +
-                "    \"established\": \"1990\"\n" +
-                "}";
+        String env = System.getProperty("env") == null ? "qa" : System.getProperty("env");
+
+        Map<String, String > data = JsonUtils.getJsonDataAsMap("airlines/"+env+"/airlinesApiData.json");
+        String endpoint = data.get("createAirlineEndpoint");
+
+        Map<String, Object> payload = Payloads.getPayloadMap_CreateAirline("98491671", "Vuvu Airways", "Dac Bietnam", "https://static.wikia.nocookie.net/onepunchman/images/d/d5/Mumen_Rider_Anime_Profile.png/revision/latest?cb=20191116234148", "Lemme get the xe lua!", "Little Saigon, CA, United States", "https://google.com", "1990");
+
         Map<String, String> headers = new HashMap<>();
 
-        Response res = RestUtils.performPost(endpoint, reqBody, headers);
+        Response res = RestUtils.performPost(endpoint, payload, headers);
 
         Assert.assertEquals(res.statusCode(), 200);
     }
