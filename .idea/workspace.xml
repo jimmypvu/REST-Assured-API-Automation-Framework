@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bbe3c35-bb2a-40d5-8834-fa3d0b9e5760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/reporting/TestListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/RandomDataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/RandomDataTypeNames.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reporting/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reporting/ExtentReportManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restutils/RestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restutils/RestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/JsonUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/airlines/AirlineAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/AirlineAPIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reports/API Test Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/API Test Report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/airlines/AirlineTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/AirlineTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/airlines/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestNG.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/airlines/dev/airlinesApiData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/airlines/dev/airlinesApiData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/airlines/qa/airlinesApiData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/airlines/qa/airlinesApiData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/airlines/Payloads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/Payloads.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
