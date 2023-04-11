@@ -11,7 +11,7 @@ repositories {
 
 dependencies {
     implementation 'io.rest-assured:rest-assured:5.3.0'
-    testImplementation 'org.testng:testng:7.7.1'
+    implementation 'org.testng:testng:7.7.1'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.14.2'
     implementation 'com.google.code.gson:gson:2.10.1'
     implementation 'com.aventstack:extentreports:5.0.9'

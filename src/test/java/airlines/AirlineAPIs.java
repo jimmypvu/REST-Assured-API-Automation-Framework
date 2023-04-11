@@ -7,12 +7,16 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class AirlineAPIs {
+    private static String baseURI = (String)BaseTest.jsonData.get("airlinesBaseUri");
+
 
     public Response createAirline(Map<String, Object> payload){
-        String endpoint = (String) BaseTest.jsonData.get("createAirlineEndpoint");
+        String endpoint = baseURI + BaseTest.jsonData.get("createAirlinePath");
 
         Map<String, String> headers = new HashMap<>();
 
         return RestUtils.performPost(endpoint, payload, headers);
     }
+
+
 }

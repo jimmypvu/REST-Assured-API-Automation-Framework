@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bbe3c35-bb2a-40d5-8834-fa3d0b9e5760" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/reporting/TestListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/reporting/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reporting/ExtentReportManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/restutils/RestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restutils/RestUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/utils/JsonUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/airlines/AirlineAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/AirlineAPIs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/airlines/AirlineTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/AirlineTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/airlines/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestNG.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/airlines/dev/airlinesApiData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/airlines/dev/airlinesApiData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/airlines/qa/airlinesApiData.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/airlines/qa/airlinesApiData.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,19 +52,53 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/jimmy/OneDrive/Desktop/code/API-Automation-RESTAssured-Framework/src/test/resources",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.4275862"
+    "project.structure.side.proportion": "0.4275862",
+    "settings.editor.selected.configurable": "preferences.keymap"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-RESTAssured-Framework\src\test\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-RESTAssured-Framework\src\test\resources" />
+      <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-RESTAssured-Framework\src\test\resources\airlines" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Gradle.AirlineTests.createAirline">
+    <configuration name="API-Automation-RESTAssured-Framework [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="AirlineTests.createAirline" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="" />
+        <option name="scriptParameters" value="--info" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -74,6 +120,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.AirlineTests.createAirline" />
+        <item itemvalue="Gradle.API-Automation-RESTAssured-Framework [test]" />
       </list>
     </recent_temporary>
   </component>
