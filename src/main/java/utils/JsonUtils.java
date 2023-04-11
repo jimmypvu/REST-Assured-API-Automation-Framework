@@ -13,7 +13,6 @@ public class JsonUtils {
 
     public static Map<String, Object> getJsonDataAsMap(String jsonFilepath) throws IOException {
         String fullJsonPath = path + jsonFilepath;
-
         Map<String, Object> data = objectMapper.readValue(new File(fullJsonPath), new TypeReference<>(){});
 
         return data;

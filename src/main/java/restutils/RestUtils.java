@@ -8,6 +8,7 @@ import io.restassured.specification.SpecificationQuerier;
 import reporting.ExtentReportManager;
 
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.given;
 
@@ -44,6 +45,7 @@ public class RestUtils {
 
     private static void logResponseInExtent(Response res){
         ExtentReportManager.logInfoDetails("RESPONSE CODE: " + res.getStatusCode());
+        ExtentReportManager.logInfoDetails("RESPONSE TIME (ms): " + res.getTimeIn(TimeUnit.MILLISECONDS));
         ExtentReportManager.logInfoDetails("RESPONSE HEADERS: ");
         ExtentReportManager.logHeaders(res.getHeaders().asList());
         ExtentReportManager.logInfoDetails("RESPONSE BODY: ");

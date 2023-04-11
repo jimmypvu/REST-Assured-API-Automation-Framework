@@ -25,12 +25,27 @@ public class TestListener implements ITestListener {
 
     @Override
     public void onTestSuccess(ITestResult result){
-
+        ExtentReportManager.logPassDetails(result.getMethod().getMethodName() + " test passed!");
     }
 
     @Override
     public void onTestFailure(ITestResult result){
         ExtentReportManager.logFailDetails(result.getThrowable().getMessage());
+
+        String stackTrace = Arrays.toString(result.getThrowable().getStackTrace());
+        stackTrace = stackTrace.replaceAll(",", "<br>");
+        String formattedTrace = "<details>\n" +
+                "    <summary>VIEW STACKTRACE & EXCEPTION LOG</summary>\n" +
+                "    "+stackTrace+"\n" +
+                "</details>";
+
+        ExtentReportManager.logExceptionDetails(formattedTrace);
+    }
+
+    @Override
+    public void onTestSkipped(ITestResult result){
+        ExtentReportManager.logInfoDetails(result.getMethod().getMethodName() + " test skipped.");
+        ExtentReportManager.logInfoDetails(result.getThrowable().getMessage());
 
         String stackTrace = Arrays.toString(result.getThrowable().getStackTrace());
         stackTrace = stackTrace.replaceAll(",", "<br>");

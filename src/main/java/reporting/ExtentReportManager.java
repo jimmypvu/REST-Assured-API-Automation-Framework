@@ -11,6 +11,7 @@ import io.restassured.http.Header;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class ExtentReportManager {
 
@@ -58,7 +59,7 @@ public class ExtentReportManager {
     }
 
     public static void logInfoDetails(String log){
-        TestListener.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.WHITE));
+        TestListener.extentTest.get().info(MarkupHelper.createLabel(log, ExtentColor.GREY));
     }
 
     public static void logWarningDetails(String log){

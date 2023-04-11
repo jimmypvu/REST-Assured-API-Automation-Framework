@@ -1,16 +1,14 @@
 package airlines;
 
-import org.testng.annotations.BeforeTest;
 import utils.JsonUtils;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.Map;
 
 public class BaseTest {
     public static Map<String, Object> jsonData;
 
-    //static block automatically gets executed when class starts, can do it like this too instead of with annotations like we usually do
+    //static block automatically gets run when class starts, can do it this way too instead of with @before annotations
     static{
         String env = System.getProperty("env").equals("") || System.getProperty("env") == null ? "qa" : System.getProperty("env");
 

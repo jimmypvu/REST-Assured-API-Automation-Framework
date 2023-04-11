@@ -1,6 +1,5 @@
 package airlines;
 
-import net.datafaker.Faker;
 import utils.DateUtils;
 import utils.RandomDataGenerator;
 import utils.RandomDataTypeNames;
