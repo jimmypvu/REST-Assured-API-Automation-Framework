@@ -1,8 +1,9 @@
 package airlines;
 
+import airlines.pojos.Airline;
 import utils.DateUtils;
 import utils.RandomDataGenerator;
-import utils.RandomDataTypeNames;
+import utils.DataTypeEnum;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -45,14 +46,42 @@ public class Payloads {
         Map<String, Object> payload = new HashMap<>();
 
         payload.put("id", RandomDataGenerator.getRandomNumber(10));
-        payload.put("name", RandomDataGenerator.getRandomDataFor(RandomDataTypeNames.COMPANYNAME));
-        payload.put("country", RandomDataGenerator.getRandomDataFor(RandomDataTypeNames.COUNTRY));
+        payload.put("name", RandomDataGenerator.getRandomFor(DataTypeEnum.COMPANYNAME));
+        payload.put("country", RandomDataGenerator.getRandomFor(DataTypeEnum.COUNTRY));
         payload.put("logo", RandomDataGenerator.getRandomAlphabetic(20) + ".png");
-        payload.put("slogan", RandomDataGenerator.getRandomDataFor(RandomDataTypeNames.SLOGAN));
-        payload.put("head_quaters", RandomDataGenerator.getRandomDataFor(RandomDataTypeNames.CITY));
+        payload.put("slogan", RandomDataGenerator.getRandomFor(DataTypeEnum.SLOGAN));
+        payload.put("head_quaters", RandomDataGenerator.getRandomFor(DataTypeEnum.CITY));
         payload.put("website", RandomDataGenerator.getRandomWebsiteName(10));
-        payload.put("established", RandomDataGenerator.getRandomNumberBetween(1900, DateUtils.getCurrentYear()));
+        payload.put("established", RandomDataGenerator.getNumberBetween(1900, DateUtils.getCurrentYear()));
 
         return payload;
+    }
+
+    public static Airline getPayloadPojo_CreateAirline(){
+        return Airline
+                .builder()
+                .id(Long.parseLong(RandomDataGenerator.getRandomNumber(10)))
+                .name(RandomDataGenerator.getRandomFor(DataTypeEnum.COMPANYNAME))
+                .country(RandomDataGenerator.getRandomFor(DataTypeEnum.COUNTRY))
+                .logo(RandomDataGenerator.getRandomAlphabetic(20) + ".png")
+                .slogan(RandomDataGenerator.getRandomFor(DataTypeEnum.SLOGAN))
+                .head_quaters(RandomDataGenerator.getRandomFor(DataTypeEnum.CITY))
+                .website(RandomDataGenerator.getRandomWebsiteName(10))
+                .established(Integer.parseInt(RandomDataGenerator.getNumberBetween(1900, DateUtils.getCurrentYear())))
+                .build();
+    }
+
+    public static Airline getPayloadPojo_CreateAirline(long id, String name, String country, String logo, String slogan, String headquarters, String website, int established){
+        return Airline
+                .builder()
+                .id(id)
+                .name(name)
+                .country(country)
+                .logo(logo)
+                .slogan(slogan)
+                .head_quaters(headquarters)
+                .website(website)
+                .established(established)
+                .build();
     }
 }

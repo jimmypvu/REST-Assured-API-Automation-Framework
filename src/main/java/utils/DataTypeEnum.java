@@ -1,6 +1,6 @@
 package utils;
 
-public enum RandomDataTypeNames {
+public enum DataTypeEnum {
     FIRSTNAME,
     LASTNAME,
     FULLNAME,

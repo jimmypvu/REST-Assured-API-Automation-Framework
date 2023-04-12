@@ -6,7 +6,7 @@ import org.apache.commons.lang3.RandomStringUtils;
 public class RandomDataGenerator {
     public static Faker faker = new Faker();
 
-    public static String getRandomDataFor(RandomDataTypeNames dataTypeNames){
+    public static String getRandomFor(DataTypeEnum dataTypeNames){
         switch(dataTypeNames){
             case FIRSTNAME:
                 return faker.name().firstName();
@@ -33,8 +33,16 @@ public class RandomDataGenerator {
         return faker.number().digits(digits);
     }
 
-    public static String getRandomNumberBetween(int min, int max){
+    public static String getNumberBetween(int min, int max){
         return String.valueOf(faker.number().numberBetween(min, max));
+    }
+
+    public static int getIntBetween(int min, int maxExclusive){
+        return faker.number().numberBetween(min, maxExclusive);
+    }
+
+    public static int getRandomInt(int digits){
+        return Integer.parseInt(faker.number().digits(digits));
     }
 
     public static String getRandomAlphabetic(int length){

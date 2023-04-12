@@ -9,9 +9,9 @@
     <test name="API Tests" preserve-order="true" parallel="methods" thread-count="3" enabled="true">
         <classes>
             <class name="airlines.AirlineTests">
-                <methods>
-                    <include name="createAirline" />
-                </methods>
+<!--                <methods>-->
+<!--                    <include name="createAirline" />-->
+<!--                </methods>-->
             </class>
         </classes>
     </test>

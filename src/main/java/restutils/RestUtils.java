@@ -14,21 +14,19 @@ import static io.restassured.RestAssured.given;
 
 public class RestUtils {
     private static RequestSpecification getReqSpecs(String endpoint, String requestPayload, Map<String, String> headers){
-        return given()
+        return given().log().all()
                 .baseUri(endpoint)
                 .headers(headers)
                 .contentType(ContentType.JSON)
-                .body(requestPayload)
-                .log().all();
+                .body(requestPayload);
     }
 
     private static RequestSpecification getReqSpecs(String endpoint, Object requestPayload, Map<String, String> headers){
-        return given()
+        return given().log().all()
                 .baseUri(endpoint)
                 .headers(headers)
                 .contentType(ContentType.JSON)
-                .body(requestPayload)
-                .log().all();
+                .body(requestPayload);
     }
 
     private static void logRequestInExtent(RequestSpecification reqSpecs){
@@ -40,7 +38,6 @@ public class RestUtils {
         ExtentReportManager.logHeaders(req.getHeaders().asList());
         ExtentReportManager.logInfoDetails("REQUEST BODY: ");
         ExtentReportManager.logJson(req.getBody());
-
     }
 
     private static void logResponseInExtent(Response res){
@@ -54,9 +51,7 @@ public class RestUtils {
 
     public static Response performPost(String endpoint, String requestPayload, Map<String, String> headers){
         RequestSpecification req = getReqSpecs(endpoint, requestPayload, headers);
-        Response res =  req
-                .when().post()
-                .then().log().all().extract().response();
+        Response res =  req.post().then().log().all().extract().response();
 
         logRequestInExtent(req);
         logResponseInExtent(res);
@@ -64,11 +59,10 @@ public class RestUtils {
         return res;
     }
 
-    public static Response performPost(String endpoint, Map<String, Object> requestPayload, Map<String, String> headers){
-        RequestSpecification req = getReqSpecs(endpoint, requestPayload, headers);
-        Response res =  req
-                .when().post()
-                .then().log().all().extract().response();
+    //now you can take request as map or pojo
+    public static Response performPost(String endpoint, Object reqPayloadPojo, Map<String, String> headers){
+        RequestSpecification req = getReqSpecs(endpoint, reqPayloadPojo, headers);
+        Response res =  req.post().then().log().all().extract().response();
 
         logRequestInExtent(req);
         logResponseInExtent(res);
