@@ -5,20 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5bbe3c35-bb2a-40d5-8834-fa3d0b9e5760" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/airlines/pojos/Airline.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/airlines/pojos/CarrierType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/CoinFinder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reports/API Test Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/API Test Report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/reporting/ExtentReportManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/reporting/ExtentReportManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/restutils/RestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/restutils/RestUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/RandomDataGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/RandomDataGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utils/RandomDataTypeNames.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/utils/DataTypeEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/airlines/AirlineAPIs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/AirlineAPIs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/airlines/AirlineTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/AirlineTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/airlines/Payloads.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/airlines/Payloads.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/TestNG.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/TestNG.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,7 +66,14 @@
       <recent name="C:\Users\jimmy\OneDrive\Desktop\code\API-Automation-RESTAssured-Framework\src\test\resources\airlines" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.AirlineTests.createAirline">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="API-Automation-RESTAssured-Framework.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="API-Automation-RESTAssured-Framework [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -172,6 +170,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Gradle.AirlineTests.createAirline" />
         <item itemvalue="Gradle.AirlineTests.createAirline_001" />
         <item itemvalue="Gradle.AirlineTests.createAirline_002" />
